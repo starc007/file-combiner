@@ -28,5 +28,8 @@
   ],
   "cpu": [
     "x64"
-  ]
+  ],
+  "publishConfig": {
+    "access": "public"
+  }
 }
