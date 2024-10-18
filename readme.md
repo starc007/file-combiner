@@ -1,42 +1,71 @@
-# File Combiner
+# @saura3h/file-combiner
 
-This tool combines multiple files into one, keeping the folder structure.
+A command-line tool to combine multiple files into one, preserving the folder structure.
 
-## What it does
+## Installation
 
-- Scans a folder and its subfolders
-- Finds files with specific endings (like .ts or .js or any other extension)
-- Puts all the file contents into one big file
-- Skips folders like node_modules, dist, and others
+You can install File Combiner globally using npm:
 
-## How to use it
-
-1. Build the tool:
-
-   ```
-   cargo build --release
-   ```
-
-2. Run it:
-
-   ```
-   ./target/release/file-combiner --directory ./your_project --output-file combined.txt --extensions ts js
-   ```
-
-   - `--directory`: The folder to scan
-   - `--output-file`: Where to save the combined file
-   - `--extensions`: Which file types to include (like ts for TypeScript)
-
-## Example
-
-To combine all TypeScript and JavaScript files:
-
-```
-./target/release/file-combiner --directory ./my_project --output-file all_code.txt --extensions ts js
+```bash
+npm install -g @saura3h/file-combiner
 ```
 
-This will create `all_code.txt` with all your .ts and .js files.
+This will make the `file-combiner` command available in your terminal.
 
-## Note
+## Usage
 
-The tool skips common folders like node_modules, dist, and .git to avoid including unnecessary files.
+After installation, you can use the File Combiner tool as follows:
+
+```bash
+file-combiner --directory <path_to_directory> --output-file <output_filename> --extensions <file_extensions>
+```
+
+### Options:
+
+- `--directory` or `-d`: The path to the directory containing the files you want to combine.
+- `--output-file` or `-o`: The name of the file where the combined content will be saved.
+- `--extensions` or `-e`: (Optional) File extensions to include, separated by spaces. If not specified, all files will be included.
+
+### Example:
+
+To combine all TypeScript and JavaScript files in the current directory into a file named `combined_code.txt`:
+
+```bash
+file-combiner --directory ./ --output-file combined_code.txt --extensions ts js
+```
+
+## Features
+
+- Combines multiple files into a single file
+- Preserves directory structure in the output
+- Option to filter files by extension
+- Works on macOS, Linux, and Windows
+
+## Excluded Directories
+
+By default, the following directories are excluded from processing:
+
+- node_modules
+- .git
+- dist
+- build
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## License
+
+This project is licensed under the MIT License.
+
+## Support
+
+If you encounter any issues or have questions, please file an issue on the GitHub repository.
+
+## Author
+
+Created by [Saurabh](https://x.com/saurra3h)
+
+---
+
+Remember to star this repo if you find it useful! ⭐️
