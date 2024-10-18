@@ -1,6 +1,6 @@
 # @saura3h/file-combiner
 
-A command-line tool to combine multiple files into one, preserving the folder structure.
+File Combiner: A CLI tool that merges multiple files into one, preserving directory structure, ideal for creating context files for AI training or analysis.
 
 ## Installation
 
