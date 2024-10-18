@@ -1,0 +1,27 @@
+{
+  "name": "file-combiner",
+  "version": "1.0.0",
+  "description": "A tool to combine multiple files into one, preserving folder structure",
+  "bin": {
+    "file-combiner": "./bin/file-combiner.js"
+  },
+  "scripts": {
+    "postinstall": "node lib/install.js"
+  },
+  "keywords": [
+    "file",
+    "combine",
+    "typescript",
+    "javascript"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "os": [
+    "darwin",
+    "linux",
+    "win32"
+  ],
+  "cpu": [
+    "x64"
+  ]
+}

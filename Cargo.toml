@@ -7,3 +7,7 @@ edition = "2021"
 clap = { version = "4.3", features = ["derive"] }
 anyhow = "1.0"
 thiserror = "1.0"
+
+
+[target.x86_64-unknown-linux-gnu]
+linker = "x86_64-linux-gnu-gcc"
