@@ -1,6 +1,6 @@
 {
   "name": "@saura3h/file-combiner",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A tool to combine multiple files into one, preserving folder structure",
   "bin": {
     "file-combiner": "./bin/file-combiner.js"
