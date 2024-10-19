@@ -39,7 +39,8 @@ file-combiner --directory ./ --output-file combined_code.txt --extensions ts js
 - Combines multiple files into a single file
 - Preserves directory structure in the output
 - Option to filter files by extension
-- Works on macOS, Linux, and Windows
+- Works on macOS
+- Coming soon on Linux and Windows
 
 ## Excluded Directories
 
