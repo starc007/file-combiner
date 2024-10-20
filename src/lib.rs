@@ -10,7 +10,7 @@ use cli::Cli;
 use error::AppError;
 
 /// Directories to exclude from processing
-const EXCLUDED_DIRS: [&str; 31] = [
+const EXCLUDED_DIRS: [&str; 32] = [
     "node_modules",
     "logs",
     "dist",
@@ -41,7 +41,8 @@ const EXCLUDED_DIRS: [&str; 31] = [
     "spec",
     "benchmark",
     "benchmarking",
-    "types"
+    "types",
+    ".expo"
 ];
 
 

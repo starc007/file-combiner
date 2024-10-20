@@ -13,7 +13,7 @@ pub struct Cli {
     pub output_file: String,
 
     /// File extensions to include (optional)
-    #[arg(short, long)]
+    #[arg(short, long, num_args = 1.., value_delimiter = ' ')]
     pub extensions: Vec<String>,
 }
 
